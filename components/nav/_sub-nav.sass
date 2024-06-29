@@ -1,0 +1,71 @@
+$colorSecundario : #232F3E
+
+@mixin total($width)
+    width: $width
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    translate: 20px
+
+@mixin cursor()
+    border: solid 1px white
+    cursor: pointer
+
+@for $contador from 0 through 5
+    .letras-#{$contador} // .division-1 . division-2
+        color: white 
+        @if $contador == 3
+            color: aliceblue
+        @else if $contador == 2
+            color: beige
+        @else if $contador == 4
+            color: azure
+        @else if $contador == 0
+            color: antiquewhite
+        @else 
+            color: white
+
+.sub-nav
+    width: 100%
+    height: 40px
+    display: flex
+    flex-direction: row
+    position: absolute
+    gap: 10px
+    background-color: $colorSecundario
+    & input 
+        display: none
+    & img
+        width: 22px
+        height: 22px
+    &-part1
+        @include total(90px)
+        gap: 4px
+        &:hover 
+            @include cursor()
+    &__menult
+        width: 240px
+        height: 100vh
+        background-color: black
+    &--part2
+        @include total(130px)
+        &:hover 
+            @include cursor()
+    &--part3
+        @include total(150px)
+        &:hover 
+            @include cursor()
+    &--part4
+        @include total(60px)
+        &:hover
+            @include cursor()
+    &--part5
+        @include total(160px)
+        &:hover
+            @include cursor()
+    &--part6
+        @include total(80px)
+        &:hover 
+            @include cursor()

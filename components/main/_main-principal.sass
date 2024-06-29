@@ -1,0 +1,516 @@
+body
+    background-color: #E3E6E6
+@mixin tam($translate : 0px)
+    width: 350px
+    height: 390px
+    translate: $translate
+    background-color: white
+
+.cuerpo
+    width: 1540px
+    height: 100%
+    display: flex
+    position: absolute
+    translate: 80px 40px
+    background-image: linear-gradient(to top, #E3E6E6, #E3E6E6,transparent, transparent), url(components/images/imagen-fondo.jpg)
+    background-repeat: no-repeat
+    background-size: 1700px
+    background-position: center top
+    background-color: #E3E6E6
+    &--fondo
+        width: 1540px
+        height: 660px
+        translate: 0px
+        position: relative
+        & img
+            width: 1540px
+    &--accesorios
+        width: 1400px
+        height: 390px
+        position: absolute
+        translate: 20px 260px
+        z-index: 9
+        &--part1
+            @include tam()
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 270px
+                translate: 20px 10px
+            & img 
+                width: 310px
+                translate: 20px 15px
+            & p 
+                font-size: 13px
+                translate: 20px 20px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part2
+            @include tam(385px)
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 280px
+                height: 29px
+                translate: 20px 15px
+            & img
+                width: 290px
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 35px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part3
+            @include tam(765px)
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 332px
+                translate: 20px 15px
+                font-size: 22px
+            & img
+                width: 320px
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 35px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part4
+            @include tam(1150px)
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 300px
+                translate: 20px 15px
+            & img 
+                width: 300px
+                height: 280px
+                translate: 20px 20px
+            & p 
+                translate: 20px 25px
+                color: #6592af
+                font-size: 13px
+                &:hover 
+                    color: orange   
+    &--juguetes
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 670px
+        z-index: 9
+        &--part1
+            @include tam()
+            &:hover 
+                cursor: pointer
+            & h1
+                width: 330px
+                font-size: 20px
+                translate: 20px 15px
+            & img
+                width: 300px
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 35px
+                color: #6592af
+                font-size: 13px
+                &:hover 
+                    color: orange
+        &--part2
+            @include tam(385px)
+            &:hover
+                cursor: pointer
+            & h1 
+                translate: 20px 15px
+                font-size: 21px
+            & img   
+                width: 300px 
+                height: 290px
+                translate: 20px 15px
+            & p 
+                translate: 20px 20px
+                color: #6592af
+                font-size: 13px
+                &:hover 
+                    color: orange 
+        &--part3
+            @include tam(765px)
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 320px
+                translate: 20px 15px
+                font-size: 22px
+            & img 
+                width: 310px 
+                height: 290px
+                translate: 20px 20px
+            & p 
+                translate: 20px 30px
+                color: #6592af
+                font-size: 13px
+                &:hover 
+                    color: orange
+        &--part4
+            @include tam(1150px)
+            &:hover 
+                cursor: pointer
+            & h1
+                width: 310px
+                translate: 20px 15px
+                font-size: 22px
+            & img
+                width: 310px
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 30px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+    &--mesa 
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 1090px
+        z-index: 9
+        background-color: white
+        &:hover 
+            cursor: pointer
+        & div h1 
+            font-size: 22px
+            translate: 20px 25px
+        & img   
+            width: 1450px
+            height: 300px
+            translate: 10px 35px
+    &--video 
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 1510px
+        z-index: 9
+        background-color: white
+        & div h1 
+            font-size: 22px
+            translate: 20px 25px
+        & img 
+            width: 1450px
+            height: 300px
+            translate: 20px 35px
+    &--decoracion 
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 1930px
+        z-index: 10
+        &--part1
+            @include tam()
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 320px
+                font-size: 20px
+                translate: 20px 15px
+            & img 
+                width: 300px 
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 30px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part2
+            @include tam(385px)
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 320px
+                translate: 20px 15px
+                font-size: 22px
+            & img
+                width: 300px 
+                height: 300px
+                translate: 20px 25px
+            & p 
+                translate: 20px 35px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part3
+            @include tam(765px)
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 220px
+                translate: 20px 15px
+            & img 
+                width: 300px 
+                height: 300px
+                translate: 20px 25px
+            & p 
+                translate: 20px 30px
+                font-size: 13px
+                color:  #6592af
+                &:hover 
+                    color: orange
+        &--part4
+            @include tam(1150px)
+            &:hover 
+                cursor:  pointer 
+            & h1 
+                width: 200px
+                translate: 20px 15px
+            & img
+                width: 300px
+                height: 300px
+                translate: 20px 20px
+            & p 
+                translate: 20px 30px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+    &--nuevo
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 2350px
+        background-color: white
+        z-index: 9
+        &:hover 
+            cursor: pointer
+        & h1 
+            font-size: 22px
+            translate: 20px 25px
+        & img   
+            translate: 20px -80px
+            width: 1450px
+            height: 400px
+    &--ropa 
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 2770px
+        background-color: white
+        z-index: 9
+        &:hover 
+            cursor: pointer
+        & h1 
+            font-size: 22px
+            translate: 20px 25px
+        & img 
+            width: 1450px
+            height: 300px
+            translate: 20px 35px
+    &--diviertete
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 3190px
+        z-index: 9
+        &--part1
+            @include tam()
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 300px
+                translate: 20px 15px
+                font-size: 20px
+            & img 
+                width: 290px 
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 35px
+                font-size: 13px
+                color: #6592af
+                &:hover
+                    color: orange
+        &--part2
+            @include tam(385px)
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 300px
+                translate: 20px 15px
+            & img
+                width: 290px
+                height: 290px
+                translate: 20px 20px
+            & p 
+                translate: 20px 20px
+                font-size: 13px
+                color:  #6592af
+                &:hover
+                    color: orange
+        &--part3
+            @include tam(765px)
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 300px
+                translate: 20px 15px
+            & img 
+                width: 280px
+                height: 280px
+                translate: 20px 20px
+            & p 
+                translate: 20px 25px
+                font-size: 13px
+                color: #6592af
+                &:hover
+                    color: orange
+        &--part4
+            @include tam(1150px)
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 300px
+                translate: 20px 15px
+            & img 
+                width: 290px
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 35px
+                font-size: 13px
+                color: #6592af
+                &:hover
+                    color: orange
+    &--deseados
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 3610px
+        background-color: white
+        z-index: 9
+        &:hover 
+            cursor: pointer
+        & h1 
+            translate: 20px 25px
+            font-size: 22px
+        & img 
+            width: 1460px
+            height: 400px
+            translate: 20px 40px
+    &--hogar
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 4030px
+        background-color: white
+        z-index: 9
+        &:hover 
+            cursor: pointer
+        & h1 
+            translate: 20px 25px 
+            font-size: 22px
+        & img 
+            width: 1450px
+            height: 300px
+            translate: 20px 35px
+    &--cuarto 
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 4450px
+        z-index: 9
+        &--part1
+            @include tam()
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 300px
+                font-size: 20px
+                translate: 20px 15px
+            & img 
+                width: 300px 
+                height: 290px
+                translate: 20px 20px
+            & p 
+                translate: 20px 25px
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part2
+            @include tam(385px)
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 300px
+                font-size: 20px
+                translate: 20px 15px
+            & img 
+                width: 290px
+                height: 290px
+                translate: 20px 25px
+            & p 
+                translate: 20px 25px 
+                font-size: 13px
+                color: #6592af
+                &:hover 
+                    color: orange
+        &--part3
+            @include tam(765px)
+            &:hover 
+                cursor: pointer
+            & h1 
+                width: 300px
+                font-size: 22px
+                translate: 20px 15px
+            & img 
+                width: 290px
+                height: 290px
+                translate: 20px 20px
+            & p 
+                translate: 20px 35px
+                font-size: 13px
+                color: #6592af
+                &:hover
+                    color: orange
+        &--part4
+            @include tam(1150px)
+            &:hover
+                cursor: pointer
+            & h1 
+                width: 300px
+                translate: 20px 15px
+            & img
+                width: 300px
+                height: 280px
+                translate: 20px 25px
+            & p 
+                translate: 20px 25px
+                font-size: 13px
+                color: #6592af
+                &:hover
+                    color: orange
+    &--entrenar
+        width: 1500px
+        height: 390px
+        position: absolute
+        translate: 20px 4870px
+        background-color: white
+        z-index: 9
+        &:hover 
+            cursor: pointer
+        & h1 
+            translate: 20px 25px
+            font-size: 22px
+        & img 
+            width: 1450px
+            height: 300px
+            translate: 20px 45px

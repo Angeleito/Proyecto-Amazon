@@ -1,0 +1,149 @@
+$colorPrincipal : #121921
+$colorSecundario : #232F3E
+$colorFooter1 : #37475A
+$colorFooter2 : #232F3E
+$colorFooter3 : #131A22
+
+@mixin flex()
+    display: flex
+    position: relative
+    flex-direction: row 
+
+@mixin flex2()
+    display: flex
+    justify-content: center
+    align-items: center
+
+.nav-principal
+    width: 100%
+    height: 60px
+    background-color: $colorPrincipal
+    @include flex
+    &--sec1
+        width: 450px
+        display: flex
+        align-items: center
+        justify-content: space-around
+
+        & .logo1
+            width: 90px
+            height: 33px
+            translate: 2px 5px
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+        & .logo2
+            width: 110px
+            height: 50px
+            display: flex
+            translate: 0px
+            position: relative
+            flex-direction: column
+            color: #7E8084
+            &:hover
+                cursor: pointer
+                border: solid 1px white
+            &--en0
+                width: 20px
+                translate: 7px 20px
+            &--en1
+                translate: 32px -12px
+            &--en2
+                translate: 32px -12px
+                color: white
+                
+    &--sec2
+        width: 2000px
+        display: flex
+        position: relative
+        align-items: center
+        & .selecciona1
+            width: 60px
+            height: 40px
+            border: none
+            translate: 15\px
+            border-radius: 5px 0px 0px 5px
+            background-color: #E6E6E6
+            &:hover
+                cursor:  pointer
+                background-color: #D4D4D4
+        & .busqueda1
+            width: 1000px
+            height: 40px
+            border: none
+            translate: 15px
+            &--cubo
+                width: 20px
+                height: 20px
+                translate: -30px
+        & .busqueda2
+            width: 50px 
+            height: 40px
+            @include flex2
+            border-radius: 0px 5px 5px 0px
+            background-color: #FEBE69
+            translate: -15px
+            &:hover
+                cursor: pointer
+                background-color: #F3A847
+            &--lupa
+                width: 30px
+                height: 30px
+                translate: -1px
+    &--sec3
+        width: 700px
+        display: flex
+        align-items: center
+        gap: 3px
+        & .pais
+            width: 70px
+            height: 50px
+            position: relative
+            @include flex2()
+            &:hover 
+                border: solid 1px white
+                cursor: pointer
+            & img   
+                    width: 35px     
+                    translate: 5px 5px
+            &--idioma 
+                width: 30px
+                color: white
+                translate: 5px 5px
+        & .usuario
+            width: 95px
+            height: 50px
+            color: white
+            &:hover 
+                border: solid 1px white
+                cursor: pointer
+            &--part1
+                translate: 0px 14px
+                font-size: 10.5px
+                border: none
+            &--part2
+                translate: 0px 14px
+                font-size: 12.5px
+                border: none
+        & .paquete
+            width: 80px
+            height: 50px
+            color: white
+            &:hover 
+                border: solid 1px white
+                cursor: pointer
+            &--part1
+                translate: 3px 10px
+                font-size: 11px
+            &--part2
+                translate: 3px 10px
+                font-size: 15px
+        & .carrito
+            width: 90px
+            height: 50px
+            &:hover 
+                border: solid 1px white
+                cursor: pointer
+            &--part1
+                width: 85px
+                height: 45px

@@ -1,0 +1,461 @@
+$colorPrincipal : #131A22
+$colorSecunadario : #232F3E
+$colorTerceario : #37475A 
+$colorTerceario-2 : #485769
+
+$colors : antiquewhite, azure, beige, aliceblue, white, #DDDDDD
+
+@each $color in $colors 
+    .opc-#{$color}  //.bg-red .bg-green
+        color: $color
+
+.footer
+    width: 100%
+    height: 1260px
+    display: flex
+    translate: 0px 5340px
+    position: absolute
+    background-color: white
+    &--identificar
+        width: 100%
+        height: 190px
+        display: flex
+        translate: 0px
+        & div
+            width: 100%
+            height: 130px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            gap: 5px
+            translate: 0px 40px
+            border-radius: 0px 5px 5px 0px
+            border: solid 1px gray 
+            & #part1
+                font-size: 13px
+            & input 
+                width: 250px
+                height: 30px
+                border: solid 2px #F1C353
+                border-radius: 5px
+                background-color: #FFCE53
+                &:hover
+                    cursor: pointer
+            & #part2
+                font-size: 11px
+                & span 
+                    color: #6592af
+                    &:hover
+                        color: orange
+                        cursor: pointer
+    &--iniciopg
+        width: 100%
+        height: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+        background-color: $colorTerceario
+        translate: 0px 190px
+        &:hover 
+            cursor: pointer
+            background-color: $colorTerceario-2
+    &--conocenos
+        width: 100%
+        height: 400px
+        display: flex
+        translate: 0px 240px
+        background-color: $colorSecundario
+        &--part1
+            width: 100px
+            height: 290px
+            display: flex
+            flex-direction: column
+            translate: 350px 50px
+            color: white
+            & p 
+                translate: 0px -5px
+                font-size: 18px
+            & #--1
+                translate: 0px 10px
+                font-size: 15px
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--2
+                font-size: 15px
+                translate: 0px 20px
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--3
+                font-size: 15px
+                translate: 0px 30px
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--4
+                font-size: 15px
+                translate: 0px 40px
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--5
+                font-size: 15px
+                translate: 0px 50px
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--6
+                font-size: 15px
+                translate: 0px 60px
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+        &--part2
+            width: 220px
+            height: 260px
+            display: flex
+            flex-direction: column
+            translate: 450px 50px
+            & p 
+                font-size: 18px
+                color: white
+            & #--1
+                translate: 0px 10px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--2
+                translate: 0px 20px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--3
+                translate: 0px 30px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--4
+                translate: 0px 40px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--5
+                translate: 0px 50px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--6
+                translate: 0px 60px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--7
+                translate: 0px 70px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--8
+                translate: 0px 80px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+        &--part3
+            width: 250px
+            height: 105px
+            display: flex
+            flex-direction: column
+            translate: 540px 50px
+            & p 
+                color: white   
+                font-size: 18px
+            & #--1
+                translate: 0px 10px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--2
+                translate: 0px 20px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--3
+                translate: 0px 30px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+        &--part4
+            width: 200px
+            height: 300px
+            display: flex
+            flex-direction: column
+            translate: 625px 50px
+            & p 
+                font-size: 18px
+                color: white
+            & #--1
+                translate: 0px 10px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--2
+                translate: 0px 20px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--3
+                translate: 0px 30px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--4
+                translate: 0px 40px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--5
+                translate: 0px 50px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--6
+                translate: 0px 60px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+            & #--7
+                translate: 0px 70px
+                font-size: 15px
+                color: #DDDDDD
+                &:hover
+                    text-decoration: underline #DDDDDD 1px solid
+                    cursor: pointer
+    &--seleccionar
+        width: 100%
+        height: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        background-color: $colorSecundario
+        translate: 0px 640px
+        border-top: solid 1px $colorTerceario-2
+        gap: 5px
+        & #logo-foot
+            width: 80px
+            translate: -30px
+        & #div1
+            border: solid 1px white
+            border-radius: 5px
+            width: 120px
+            height: 30px
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            color: gray
+            translate: 52px
+            &:hover
+                cursor: pointer
+            & img
+                width: 15px
+        & #--1
+            width: 230px
+            height: 30px
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            border: solid 1px white
+            border-radius: 5px
+            color: gray
+            translate: 52px
+            &:hover
+                cursor: pointer
+            & span 
+                color: white
+        & #div2
+            border: solid 1px white
+            width: 170px
+            height: 30px
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            border-radius: 5px
+            color: gray
+            translate: 52px
+            &:hover
+                cursor: pointer
+            & img   
+                width: 30px
+    &--piepg
+        width: 100%
+        height: 420px
+        padding-right: 240px
+        padding-left: 260px
+        padding-top: 33px
+        display: flex
+        justify-content: space-evenly
+        align-items: stretch
+        translate: 0px 740px
+        background-color: $colorPrincipal
+        & div p:hover 
+            text-decoration: underline gray 1px solid
+            cursor: pointer
+
+        & #--part1
+            width: 97px
+            height: 286px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+            gap: 30px
+            & p 
+                font-size: 12px
+                color: gray 
+                & span 
+                    color: white
+        & #--part2
+            width: 90px
+            height: 286px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+            gap: 30px
+            & p 
+                font-size: 12px
+                color: gray 
+                width: 82px
+                & span 
+                    color: white
+            & #--1
+                width: 95px
+            & #--2
+                width: 95px
+        & #--part3
+            width: 90px
+            height: 286px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+            gap: 25px
+            & p 
+                font-size: 12px
+                color: gray 
+                width: 130px
+                & span 
+                    color: white
+            & #--1
+                width: 135px
+            & #--2
+                width: 130px
+        & #--part4
+            width: 90px
+            height: 286px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+            gap: 30px
+            & p 
+                font-size: 12px
+                color: gray 
+                width: 130px
+                & span 
+                    color: white
+            & #--1
+                width: 150px
+        & #--part5
+            width: 90px
+            height: 286px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+            gap: 25px
+            & p 
+                font-size: 12px
+                color: gray 
+                width: 130px
+                & span 
+                    color: white
+        & #--part6
+            width: 90px
+            height: 286px
+            display: flex
+            flex-direction: column
+            position: relative
+            color: white
+            gap: 25px
+            & p 
+                font-size: 12px
+                color: gray 
+                width: 130px
+                & span 
+                    color: white
+    &--piefin
+        width: 100%
+        height: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        translate: 0px 1160px
+        color: #CFDDDD
+        gap: 10px
+        background-color: $colorPrincipal
+        & img
+            width: 35px
+        & p
+            font-size: 12px
+            &:hover
+                text-decoration: underline #CFDDDD solid 1px
+                cursor: pointer
+        & #--1
+            translate: 0px 12px
+            display: flex
+            flex-direction: column
+            gap: 5px
+            height: 40px
+            & img
+                width: 15px
+                translate: 10px
+            & #--2
+                translate: 30px -18px
+            
